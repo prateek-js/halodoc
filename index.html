@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-8nq3OiMMgrVFAHyRMMO+DTfMEciSY+c3Awhj/5ljQ1xck1Uv2BUtMjsjLD8GT5Er" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+    <title>Searcher</title>
+</head>
+<body>
+
+    <main>
+
+        <header class="searchForm-container">
+    
+          <img src="https://image.ibb.co/e6vOFQ/wikipedia.png" alt="Wikipedia Logo">
+    
+          <form class="searchForm">
+            <input type="search" class="searchForm-input">
+            <button type="submit" class="icon searchIcon">
+              <img src="https://image.ibb.co/cpG8zk/search.png" alt="Magnifying Glass Icon">
+            </button>
+          </form>
+    
+        </header>
+    
+        <section class="searchResults"></section>
+        <div class="paginated-container">
+        <input type="button" id="first" onclick="firstPage()" value="first" />
+        <input type="button" id="next" onclick="nextPage()" value="next" />
+        <input type="button" id="previous" onclick="previousPage()" value="previous" />
+        <input type="button" id="last" onclick="lastPage()" value="last" />
+        </div>
+    </main>
+<footer class="mt-5 p-3 text-center bg-light">
+    Searcher &copy;
+</footer>
+
+<script src="app.js"></script>
+<script src="xmlToJson.js"></script>
+
+</body>
+</html>
